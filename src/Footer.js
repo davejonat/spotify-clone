@@ -3,10 +3,20 @@ import "./Footer.css";
 
 function Footer() {
     return (
-        <div className="footer">
-            <h1>I am the Footer</h1>
+    <div className="footer">        
+        <div className="footer__left">
+            <p>Album and Song details</p>
         </div>
-    )
+
+        <div className="footer__center">
+        <p>Player controls</p>
+        </div> 
+
+        <div className="footer__right">
+        <p>Volume controls</p>
+        </div> 
+    </div>           
+    );
 }
 
 export default Footer;

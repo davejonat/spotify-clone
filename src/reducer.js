@@ -21,7 +21,12 @@ switch (action.type) {
             ...state,
             token: action.token,
         };
-    default:
+    case "SET_PLAYLIST":
+        return {
+            ...state,
+            playlists: action.playlists,
+        };
+        default:
         return state;    
 }
 }
